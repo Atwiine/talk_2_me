@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TextToSpeech">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/purple_500"
+        android:elevation="4dp"
+        app:titleTextColor="@color/white"
+        app:title="talk 2 me"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/asdad"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+
+        <RelativeLayout
+
+            android:id="@+id/asfsadas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/writtentext"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:textColor="@color/purple_500"
+        android:layout_margin="10dp"
+        android:text=""/>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_mic_24white"
+        android:id="@+id/iv_mic"
+        android:layout_above="@id/bottom_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/purple_500"
+        />
+
+<!--    <ImageView-->
+<!--       -->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_height="140dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:src="@drawable/ic_baseline_mic_24" />-->
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/message_text_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/send_btn"
+            android:fontFamily="@font/poppins"
+            android:hint="Type your message"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/black" />
+
+        <ImageView
+            android:id="@+id/send_btn"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_send" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

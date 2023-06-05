@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="400dp"
+    android:background="@color/white"
+    tools:context=".Settings">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_close_24"
+        android:padding="10dp"
+        android:id="@+id/close"
+        android:background="@color/purple_500"
+        />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/asdad"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/asfsadas"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/language"
+                    />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:text="Language"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English (default)"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="14sp"
+
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
